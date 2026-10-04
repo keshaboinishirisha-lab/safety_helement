@@ -1,0 +1,24 @@
+# Smart Helmet Safety System — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core Framework ──────────────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Data & Visualisation ────────────────────────────────────────────────
+pandas>=2.0.0
+
+# ── SMS Alerts (optional — required for real Twilio SMS) ───────────────
+# Uncomment the line below and configure credentials in sms.py
+# twilio>=9.0.0
+
+# ── Real GPS via IP geolocation (optional) ────────────────────────────
+# Uncomment to enable get_real_device_location() in location.py
+# geocoder>=1.38.1
+
+# ── Audio playback (optional — native sound outside Streamlit) ─────────
+# Linux/macOS:   pip install playsound==1.2.2   (requires gstreamer on Linux)
+# Windows:       winsound is built-in — no install needed
+# playsound==1.2.2
+
+# ── Standard library (already included in Python 3.10+) ────────────────
+# sqlite3, random, math, time, datetime, sys — no install required
